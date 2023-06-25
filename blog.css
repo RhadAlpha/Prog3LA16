@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body 
+{
+    padding:0; 
+    margin:0; 
+    min-height: 100%;
+}
+footer
+{
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    top: 100%;
+}
+.background{
+    height: 91.4vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://i.pinimg.com/564x/e9/14/a0/e914a0278e763833eaddb76fca98428e.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+.navigation {
+    width: 75%;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchbar {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 14%;
+    height: 27px;
+    cursor: pointer;
+}
+.lugo {
+    margin: auto;
+    display: flex;
+    width: 20%;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+}
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.hightlight{
+    color: #E7B10A;
+}
+.footers {
+    width: 75%;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_0 {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 17%;
+    height: 35px;
+    cursor: pointer;
+}
+.footers ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.footers ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.pictures {
+    margin-top: 25px;
+    margin-left: 280px;
+    margin-right: 180px;
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.pictures2 {
+    flex-basis: 50%;
+}
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+h5 {
+    color: #fff;
+}
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1 {
+    background-image: url(https://theearthkitchenblog.com/wp-content/uploads/2020/03/kare-kare-2-0719-500x500.jpg);
+}
+.card2 {
+    background-image: url(https://farahjeats.com/wp-content/uploads/2022/04/IMG_4480_jpg-1024x1024.jpg);
+}
+.card3 {
+    background-image: url(https://pinoyfoodguide.com/wp-content/uploads/2020/10/Pork-Sisig-With-Egg.jpg);
+}
+.card4 {
+    background-image: url(https://whatsbarbcooking.com/wp-content/uploads/2020/04/IMG_7902-1024x1024.jpg);
+}
+.card5 {
+    width: 400px;
+    height: 400px;
+    background-image: url(https://www.halfbakedharvest.com/wp-content/uploads/2019/03/Filipino-Coconut-Adobo-Chicken-1.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.footers {
+    width: 75%;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_0 {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 17%;
+    height: 35px;
+    cursor: pointer;
+}
+.footers ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.footers ul li a {
+    text-decoration: none;
+    color: #fff;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu-Do</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/d76784841b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        header {
+            background-color: #5F8D4E;
+            color: aliceblue;
+            height: 65px;
+        }
+
+        footer {
+            background-color: #5F8D4E;
+            color: aliceblue;
+            height: 65px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .background {
+            height: 91.4vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+                url(https://i.pinimg.com/564x/e9/14/a0/e914a0278e763833eaddb76fca98428e.jpg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation {
+            width: 75%;
+            padding: 15px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .searchbar {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            width: 14%;
+            height: 27px;
+            cursor: pointer;
+        }
+
+        .lugo {
+            margin: auto;
+            display: flex;
+            width: 20%;
+            height: 40px;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        .navigation ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .fbox {
+            width: 90%;
+            max-width: 450px;
+            position: absolute;
+            top: 45.5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 50px 60px 70px;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        .fbox h1 {
+            font-size: 30px;
+            margin-bottom: 60px;
+            color: #E7B10A;
+            position: relative;
+        }
+
+        .fbox h1::after {
+            content: '';
+            width: 30px;
+            height: 4px;
+            border-radius: 3px;
+            border-color: #E7B10A;
+            background: #E7B10A;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .fbox {
+            text-align: left;
+        }
+
+        .fbox form {
+            text-align: right;
+        }
+
+        .fbox form p {
+            text-align: left;
+        }
+
+        .tc {
+            text-align: right;
+        }
+
+        .input2 {
+            background-color: #fff;
+            margin: 15px 0;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            max-height: 65px;
+            transition: max-height 0.5s;
+            overflow: hidden;
+        }
+
+        input {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 18px 15px;
+        }
+
+        .input2 i {
+            margin-left: 15px;
+            color: black;
+        }
+
+        form p {
+            text-align: left;
+            font-size: 13px;
+        }
+
+        form p a {
+            text-decoration: none;
+            color: #E7B10A;
+        }
+
+        .bfield {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bfield button {
+            flex-basis: 49%;
+            background: #E7B10A;
+            color: black;
+            height: 40px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: background 1s;
+        }
+
+        .input1 {
+            height: 280px;
+        }
+
+        .bfield button.button_disabled {
+            background: #eaeaea;
+            color: #555;
+        }
+
+        .tc .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .tc .buttons button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .accept-button {
+            background-color: #E7B10A;
+            color: black;
+        }
+
+        .ignore-button {
+            background-color: #5F8D4E;
+            color: #fff;
+        }
+
+        .footers {
+            width: 75%;
+            padding: 15px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer_0 {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            width: 17%;
+            height: 35px;
+            cursor: pointer;
+        }
+
+        .footers ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .footers ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="navigation">
+        <div class="searchbar">
+            <img src="https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" class="searchbar">
+            <img src="https://www.seekpng.com/png/full/434-4344907_magnifying-glass-white-icon-cocoa-bean.png"
+                 class="searchbar">
+        </div>
+        <div class="lugo">
+            <img src="https://i.ibb.co/CQgpLbM/Picsart-23-06-10-16-16-25-388.png" class="lugo">
+            <h5><span class="hightlight"><b>MENU</b></span><small>-DO</small></h5>
+        </div>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+</header>
+<div class="background">
+    <div class="fbox">
+        <h3>Terms and Conditions</h3>
+
+        <h4>Introduction</h4>
+        <p>These terms and conditions outline the rules and regulations for the use of our website.</p>
+
+        <h4>Restrictions</h4>
+        <p>You are specifically restricted from:</p>
+        <ul>
+            <li>publicly performing and/or showing any website material without permission;</li>
+            <li>using this website in any way that is or may be damaging to this website;</li>
+            <li>using this website contrary to applicable laws and regulations, or in any way may cause harm to the website,
+                or to any person or business entity;</li>
+            <li>engaging in any data mining, data harvesting, data extracting, or any other similar activity in relation to
+                this website;</li>
+        </ul>
+        
+        <h4>Variation of Terms</h4>
+        <p>We are permitted to revise these terms and conditions at any time without notice.</p>
+        <hr>
+
+        <div class="buttons">
+            <br>
+            <button type="button" class="accept-button"> Accept </button>
+            <button type="button" class="ignore-button"> Ignore </button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footers">
+        <div class="footer_0">
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/phone-icon-18-256.png"
+                 class="footer_0">
+            <img src="https://icon-library.com/images/mail-icon-png-white/mail-icon-png-white-8.jpg"
+                 class="footer_0">
+            <img src="https://www.customcraftcountertops.com/CountertopsWebsite/web/cms/img/MMCountertops-CartIcon-White.png"
+                 class="footer_0">
+        </div>
+        <ul>
+            <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+
+</html>
+
+
+
+
+

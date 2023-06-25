@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu-Do</title>
+        <link rel = "stylesheet" href = "login.css">
+        <script src="https://kit.fontawesome.com/d76784841b.js" crossorigin="anonymous"></script>
+        <style>
+            header {
+                background-color: #5F8D4E;
+                color:aliceblue;
+                height: 65px;
+    
+            }
+            footer {
+                background-color: #5F8D4E;
+                color:aliceblue;
+                height: 65px;
+                width: auto;
+                margin-top: auto;
+            }
+            </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="navigation">
+                <div class = "searchbar">
+                <img src = "https://icon-library.com/images/white-menu-icon/white-menu-icon-4.jpg" class = "searchbar">
+                <img src = "https://www.seekpng.com/png/full/434-4344907_magnifying-glass-white-icon-cocoa-bean.png" class = "searchbar" >    
+                </div>
+                <div class="lugo">
+                <img src="https://i.ibb.co/CQgpLbM/Picsart-23-06-10-16-16-25-388.png" class = "lugo">
+                <h5><span class="hightlight"><b>MENU</b></span><small>-DO</small></h5>
+                </div>
+                <ul>
+                    <li><a href = "index.html"> Home</a></li>
+                    <li><a href = "aboutus.html">About</a></li>
+                    <li><a href = "blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="background">
+            <div class = "fbox">
+                <h1 id = "signup1">Sign Up</h1>
+                <form>
+                    <div class = "input1">
+                        <div class = "input2" id = "namefield">
+                            <i class="fa-regular fa-user"></i>
+                            <input type = "text" placeholder="name">
+                        </div>
+
+                        <div class = "input2">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type = "email" placeholder="email">
+                        </div>
+
+                        <div class = "input2">
+                            <i class="fa-sharp fa-regular fa-lock"></i>
+                            <input type = "password" placeholder="password">
+                        </div>
+                        <p>Lost Password? <a href ="#">Click Here</a></p>
+                    </div>
+                    <div class ="bfield">
+                        <button type = "button" id = "signup2"> Sign Up</button>
+                        <button type = "button" id = "login1" class = "button_disabled">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    <script>
+        let signup2 = document.getElementById("signup2");
+        let login1 = document.getElementById("login1");
+        let namefield = document.getElementById("namefield");
+        let signup1 = document.getElementById("signup1");
+
+
+        login1.onclick = function() {
+            namefield.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signup2.classList.add("button_disabled")
+            login1.classList.remove("button_disabled")
+        }
+
+        signup2.onclick = function() {
+            namefield.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signup2.classList.remove("button_disabled")
+            login1.classList.add("button_disabled")
+        }
+    </script>
+    
+    </body>
+    <footer>
+        <div class = "footers">
+            <div class = "footer_0">
+                <img src = "https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/phone-icon-18-256.png" class = "footer_0">
+                <img src = "https://icon-library.com/images/mail-icon-png-white/mail-icon-png-white-8.jpg" class = "footer_0">
+                <img src = "https://www.customcraftcountertops.com/CountertopsWebsite/web/cms/img/MMCountertops-CartIcon-White.png" class = "footer_0">
+            </div>
+            <ul>
+                <li><a href = "terms&conditions.html"> Terms & Conditions </a></li>
+                <li><a href = "privacypolicy.html"> Privacy Policy </a></li>
+                <li><a href = "contactus.html"> Contact Us </a></li>
+                
+            </div>
+        </div>
+    </footer>
+</html>
